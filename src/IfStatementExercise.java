@@ -3,18 +3,14 @@ public class IfStatementExercise {
     public static void main(String[] args) {
         double input = Double.parseDouble(args[0]);
 
-        //If the input is divisible by 5 and 3, print "FizzBuzz"
         if(input%5 == 0 && input%3 == 0)
-            System.out.println("FizzBuzz");
-        //If the input is divisible by 5, print "Fizz"
+            System.out.println("The number " + (int) input + " is divisible by both 5 and 3.");
         else if(input%5 == 0)
-            System.out.println("Fizz");
-        //If the input is divisible by 3, print "Buzz"
+            System.out.println("The number " + (int) input + " is divisible by 5, but not 3.");
         else if(input%3 == 0)
-            System.out.println("Buzz");
-        //If the input is not divisible by either 3 or 5, print the number as integer
+            System.out.println("The number " + (int) input + " is divisible by 3, but not 5.");
         else
-            System.out.println((int) input);
+            System.out.println("The number " + (int) input + " is neither divisible by 5 or 3.");
 
     }
 }
